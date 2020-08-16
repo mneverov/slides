@@ -195,6 +195,9 @@ Google chat: #guild-golang
 * Basics - implement Stringer interface - GOTCHA
 .play -edit src/basics/wrong_stringer.go
 
+* Basics - GOTCHA2
+.play -edit src/basics/gotcha2.go
+
 * Exame 3 - Implement the stringer and sort interface on type RString and a list of RString
 
   package rstring
@@ -287,6 +290,9 @@ old:
 .link https://golang.org/doc/effective_go.html
 .link https://blog.golang.org/
 .link https://talks.golang.org/
+
+.link https://learning.oreilly.com/videos/intermediate-go-programming/9781491944073
+.link https://learning.oreilly.com/learning-paths/learning-path-go/9781491990384/
 
 * Feedback
 [[https://bit.ly/2BQrSRq][https://bit.ly/2BQrSRq]]
