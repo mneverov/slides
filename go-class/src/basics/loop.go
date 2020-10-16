@@ -1,14 +1,15 @@
 package main
 
-var i, j int
-
 func main() {
+	var i, j int
+
+	// infinite loop
 	for {
-		// forever loop
 		break
 	}
+
+	// while loop
 	for i < j {
-		// while loop
 		break
 	}
 }

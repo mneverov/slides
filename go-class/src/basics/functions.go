@@ -10,8 +10,10 @@ func hello(s string) string {
 
 func main() {
 	fmt.Println(hello("Go Class"))
+
 	var myfunc f = hello
 	fmt.Println(myfunc("from stored function myfunc"))
+
 	var anononym f = func(s string) string {
 		return "Hello from anononym to " + s
 	}
@@ -21,4 +23,4 @@ func main() {
 		return a + b
 	}(2, 3)
 	fmt.Printf("sum is: %d\n", sum)
-} // END
+}

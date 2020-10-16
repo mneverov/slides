@@ -11,23 +11,20 @@ Software Engineer, Zalando
 sandor.szuecs@zalando.de
 https://sandor.szuecs.net/
 @sszuecs
-[[https://go-talks.appspot.com/github.com/szuecs/slides/go-class/go-class-kickstarter.slide][Slides available https://go-talks.appspot.com/github.com/szuecs/slides/go-class/go-class-kickstarter.slide]]
-[[https://github.com/szuecs/slides][Slides src available https://github.com/szuecs/slides]]
-[[https://docs.google.com/document/d/1Bcr6y61N47E-erV2FPCdUw6QNC4Q78l4y9NALYTNFVM][Old Teapot Go standards]]
-[[https://blog.golang.org/][official Go Blog]]
-[[https://gin-gonic.github.io/gin][Gin micro webframework https://gin-gonic.github.io/gin/]]
-[[https://github.com/mikkeloscar/gin-swagger][Gin swagger: https://github.com/mikkeloscar/gin-swagger]]
-[[https://bit.ly/2BQrSRq][Feedback https://bit.ly/2BQrSRq]]
 
 * Requirements
 - install https://golang.org/doc/install
-- optional: set ENV: GOROOT, GOPATH, GOBIN
+- *optional*: set ENV: GOROOT, GOPATH, GOBIN
 - test: https://golang.org/doc/install#testing
 - If you are not prepared, use [[https://play.golang.org/][https://play.golang.org/]]
 
-* Why go?
-.image gopher.jpeg
-.caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
+* Slides available
+
+[[http://go-talks.appspot.com/github.com/szuecs/slides/go-class/go-class-kickstarter.slide][slides]]
+
+Google chat: [[https://chat.google.com/room/AAAA5wplaCc][#guild-golang]]
+
+Feedback form: [[https://bit.ly/2wpJF1O][https://bit.ly/2wpJF1O]]
 
 * Why go?
 - Fast and fast to compile
@@ -58,47 +55,45 @@ https://sandor.szuecs.net/
 - Safety: type-safe and memory-safe.
 - Good support for *concurrency* and communication.
 - Efficient, *latency-free* garbage collection.
-- *High-speed* compilation. (1.5 was slower but better ASM)
+- *High-speed* compilation.
 .caption Goals 2009 by Rob Pike
 
-* Basics - var, utf8
-.play -edit src/basics/basics.go
+* Basics - var
+.play -edit src/basics/basics_var.go /const c int/,
+
+* Basics - string
+.play -edit src/basics/basics_string.go /func main/,
 
 * Basics - branches
-.play -edit src/basics/branches.go /^func main/,/^}/
+.play -edit src/basics/branches.go /func main/,
 
-* Basics - loops - forever & while
-.code src/basics/loop.go
+* Basics - loops - infinite & while
+.code src/basics/loop.go /func main/,
 
 * Basics - loops - index & range
-.play -edit src/basics/loop_range.go  /^func main/,/^}/
-
-* Basics - Pointers
-.play -edit src/basics/ptr.go
+.play -edit src/basics/loop_range.go /func main/,
 
 * Basics - functions
 - Function arguments are always call by value also pointers will be copied!
 - A function signature can be used as a type
-.play -edit src/basics/functions.go /type f/,/END/
+
+* Basics - functions example
+.play -edit src/basics/functions.go /type f/,
+
+* Basics - Pointers
+.play -edit src/basics/ptr.go /func set/,
 
 * Basics - struct
-.play -edit src/basics/struct.go
+.play -edit src/basics/struct.go /type T/,
 
 * Basics - OO
 - no type hierarchy
 - structs, pointers and methods
-.play -edit src/basics/basics_oo.go
+.play -edit src/basics/basics_oo.go /type Foo/,
 
 * Example stdlib - bytes.Buffer
 
 .play -edit src/basics/bytes_buffer.go
-
-* Slides available
-
-http://go-talks.appspot.com/github.com/szuecs/slides/go-class/go-class-kickstarter.slide#17
-
-Google chat: #guild-golang
-
 
 * Exame 1 - Write a function that implements string reverse (Hint: string is immutable, use bytes.Buffer or a = append(a, s[2]))
 

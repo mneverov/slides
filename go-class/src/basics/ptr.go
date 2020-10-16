@@ -15,8 +15,10 @@ func main() {
 	i = 0
 	j = 1
 	fmt.Printf("i: %d, j: %d\n", i, j)
+
 	set(42, &i)
 	fmt.Printf("i: %d, j: %d\n", i, j)
+
 	swap(&i, &j)
 	fmt.Printf("i: %d, j: %d\n", i, j)
 }

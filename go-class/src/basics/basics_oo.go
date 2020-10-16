@@ -14,6 +14,7 @@ func (f *Foo) helloB() string {
 
 func main() {
 	foo := &Foo{"This is A", "This is b"}
+
 	println(foo.HelloA())
 	println(foo.helloB())
 }
