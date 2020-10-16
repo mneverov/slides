@@ -11,11 +11,11 @@ func (f *SuperString) Add(s string) {
 }
 
 func main() {
-	fo := SuperString{"super"}
-	fo.Add(" string")
-	fmt.Println(fo) // => compiler error?
+	val := SuperString{"super"}
+	val.Add(" string")
+	fmt.Println(val) // => compiler error?
 
-	foo := &fo
-	foo.Add("!")
-	fmt.Println(foo)
+	ptr := &val
+	ptr.Add("!")
+	fmt.Println(ptr)
 }

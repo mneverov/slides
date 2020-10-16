@@ -114,10 +114,10 @@ Feedback form: [[https://bit.ly/2wpJF1O][https://bit.ly/2wpJF1O]]
   cba
 
 * Solution Exame 1
-.play -edit src/exame1/exame1.go  /^func reverse/,/^}/
+.play -edit src/exame1/exame1.go  /func reverse/,
 
 * err idiom - example
-.play -edit src/basics/err.go /^func read/,/END/
+.play -edit src/basics/err.go /func read/,
 
 * Basics - package and exported names
 - package declaration creates a namespace for variables, types, methods, functions, ..
@@ -158,7 +158,7 @@ Feedback form: [[https://bit.ly/2wpJF1O][https://bit.ly/2wpJF1O]]
 
 * Solution Exame 2
 .code src/exame2/src/rstring/rstring.go  /^import .*/,/\)/
-.code src/exame2/src/rstring/rstring.go  /^\/\/ START/,/END/
+.code src/exame2/src/rstring/rstring.go  /START OMIT/,
 
 * Basics - interface
 - Specify behaviour of a method defined by: (name, parameter, return value)
@@ -185,13 +185,13 @@ Feedback form: [[https://bit.ly/2wpJF1O][https://bit.ly/2wpJF1O]]
 .code src/basics/readwriter.go
 
 * Basics - implement Stringer interface
-.play -edit src/basics/a_stringer.go
+.play -edit src/basics/a_stringer.go /type Foo/,
 
 * Basics - implement Stringer interface - GOTCHA
-.play -edit src/basics/wrong_stringer.go
+.play -edit src/basics/wrong_stringer.go /type Foo/,
 
 * Basics - GOTCHA2
-.play -edit src/basics/gotcha2.go
+.play -edit src/basics/gotcha2.go /type SuperString/,
 
 * Exame 3 - Implement the stringer and sort interface on type RString and a list of RString
 
@@ -222,10 +222,10 @@ Feedback form: [[https://bit.ly/2wpJF1O][https://bit.ly/2wpJF1O]]
   [hello world a abc ab]
   [a ab abc hello world]
 
-.code src/exame3/exame3.go  /^\/\/ START/,/END/
+.code src/exame3/exame3.go  /START OMIT/,
 
 * Solution Exame 3
-.code src/exame3/src/rstring/rstring.go  /^\/\/ START/,/END/
+.code src/exame3/src/rstring/rstring.go /START OMIT/,
 
 * Recap: type system
 - strong, static types
@@ -263,21 +263,6 @@ Feedback form: [[https://bit.ly/2wpJF1O][https://bit.ly/2wpJF1O]]
 	for k, v := range h {
 		fmt.Printf("%s: %d\n", k, v)
 	}
-
-* Dependencies
-- Use Go modules!
-- in Go1.11 you have to opt-in and enable with:
-
-        GO111MODULE=on go build .
-
-- checkout the Go wiki: [[https://github.com/golang/go/wiki/Modules][https://github.com/golang/go/wiki/Modules]]
-
-
-old:
-- [[https://github.com/Masterminds/glide][glide]] glide.yaml + glide.lock
-- [[https://github.com/golang/dep][go dep]] Gopkg.toml + Gopkg.lock
-    ...
-
 
 * References - Learn GO
 .link https://tour.golang.org/welcome/1

@@ -26,7 +26,7 @@ func (s RString) Reverse() RString {
 	return NewRString(buf.String())
 }
 
-// START src/rstring/rstring.go "package rstring"
+// START OMIT
 func (s RString) String() string {
 	return s.S
 }
@@ -43,5 +43,3 @@ func (s SortableRString) Less(i, j int) bool {
 func (s SortableRString) Swap(i, j int) {
 	s[i], s[j] = s[j], s[i]
 }
-
-//END

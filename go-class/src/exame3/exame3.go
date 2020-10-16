@@ -1,7 +1,7 @@
 // call it from a main
 package main
 
-// START exame3.go contains "package main"
+// START OMIT
 import (
 	"fmt"
 	"rstring"
@@ -16,8 +16,7 @@ func main() {
 
 	ary := rstring.SortableRString{rs, rs1, rs3, rs2}
 	fmt.Printf("%v\n", ary)
+
 	sort.Sort(ary)
 	fmt.Printf("%v\n", ary)
 }
-
-// END

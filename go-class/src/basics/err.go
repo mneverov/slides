@@ -24,4 +24,4 @@ func main() {
 	}
 	fmt.Printf("Data as hex:\n%x\n", data)
 	fmt.Printf("Data as string:\n%s\n", data)
-} //END
+}

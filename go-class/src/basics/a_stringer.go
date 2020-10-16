@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 type Foo struct {
 	A string
@@ -8,12 +11,13 @@ type Foo struct {
 
 // implements stringer Interface
 func (f Foo) String() string {
-	return fmt.Sprintf("<Foo.A=%q>", f.A)
+	return strings.ToUpper(f.A)
 }
 
 func main() {
 	fo := Foo{"another Foo"}
-	fmt.Println(fo) // => <Foo.A="another Foo">
+	fmt.Println(fo)
+
 	foo := &fo
-	fmt.Println(foo) // => <Foo.A="another Foo">
+	fmt.Println(foo)
 }

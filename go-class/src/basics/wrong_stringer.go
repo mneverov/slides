@@ -15,8 +15,9 @@ func (f *Foo) String() string {
 }
 
 func main() {
-	fo := Foo{"another Foo"}
-	fmt.Println(fo) // => {another Foo}
-	foo := &fo
-	fmt.Println(foo) // => <Foo.A="another Foo">
+	val := Foo{"another Foo"}
+	fmt.Println(val) // => {another Foo}
+
+	ptr := &val
+	fmt.Println(ptr) // => <Foo.A="another Foo">
 }

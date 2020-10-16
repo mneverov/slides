@@ -9,7 +9,7 @@ type RString struct {
 	S string
 }
 
-// START
+// START OMIT
 func NewRString(s string) RString {
 	return RString{S: s}
 }
@@ -25,4 +25,4 @@ func (s RString) Reverse() RString {
 	}
 
 	return NewRString(buf.String())
-} // END
+}
