@@ -13,7 +13,7 @@ func (t *T) Say(s string) string {
 }
 
 func foo(f Foo) {
-	var s string = f.Say("Hello")
+	s := f.Say("Hello")
 	fmt.Printf("%v", s)
 }
 
