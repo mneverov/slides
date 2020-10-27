@@ -242,7 +242,7 @@ Feedback form: [[https://bit.ly/2wpJF1O][https://bit.ly/2wpJF1O]]
 - type inference:  x := 0  // same as: var x int = 0
 - no generics -> use interfaces or code generation
 - no exceptions -> use err != nil check and defer fd.Close()
-- *new*: Generics are now a proposal at [[https://blog.golang.org/why-generics]]
+- [[https://blog.golang.org/generics-next-step][Generics next step]], [[https://go2goplay.golang.org/][playground]]
 
 * array, slice, map
 - array: static size!
