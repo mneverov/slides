@@ -18,6 +18,13 @@ https://sandor.szuecs.net/
 - test: https://golang.org/doc/install#testing
 - If you are not prepared, use [[https://play.golang.org/][https://play.golang.org/]]
 
+Editors
+
+- [[https://code.visualstudio.com/][VSCode]]
+- [[https://www.sublimetext.com/][Sublime Text]]
+- emacs, vim
+- [[https://www.jetbrains.com/go/][GoLand]]
+
 * Slides available
 
 [[http://go-talks.appspot.com/github.com/mneverov/slides/go-class/go-class-kickstarter.slide][slides]]
